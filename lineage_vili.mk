@@ -14,6 +14,19 @@ $(call inherit-product, device/xiaomi/vili/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Matrixx
+MATRIXX_BUILD_TYPE := Unofficial
+MATRIXX_MAINTAINER := Cr1st1anlp
+MATRIXX_BATTERY := 5000mAh
+MATRIXX_DISPLAY := 2400x1080
+MATRIXX_CHIPSET := SM8350
+
+# GAPPS
+WITH_GMS := true
+BUILD_GOOGLE_CONTACTS := true
+BUILD_GOOGLE_DIALER := true
+BUILD_GOOGLE_MESSAGE := true
+
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := vili
 PRODUCT_MANUFACTURER := Xiaomi
